@@ -1,13 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '../index.css'
 
 function NavBar() {
 
     const [hover, setHover] = useState(false);
 
+    var ref = useRef<any>();
+    useEffect(() => {
+        let handlerLeave = (e: any) => {
+            if (ref.current) {
+                if (!ref.current.contains(e.target)) {
+                    setHover(false);
+                }
+            }
+        }
+        let handlerEnter = (e: any) => {
+            if (ref.current) {
+                if (ref.current.contains(e.target)) {
+                    setHover(true);
+                }
+            }
+        }
+        document.addEventListener("mouseleave", handlerLeave)
+        document.addEventListener("mouseenter", handlerEnter)
+    })
+
     return (
-        <div className="">
-            <div className="" onMouseEnter={() => setHover(true)}>
+        <div className="" ref={ref} >
+            <div className="">
                 <div className={`bg-[#343A40] h-[5vh] w-screen drop-shadow-md text-[#F8F9FA] fixed ${!hover ? 'translate-y-0' : '-translate-y-full'} duration-75`}>
                     <div className={`flex h-full justify-between items-center`}>
                         <div className="mx-5 text-md flex items-center justify-between w-[10vw]">
@@ -22,7 +42,7 @@ function NavBar() {
                     </div>
                 </div>
             </div>
-            <div className="" onMouseLeave={() => setHover(false)}>
+            <div className="">
                 <div className={`bg-[#343A40] h-[15vh] w-screen drop-shadow-md text-[#F8F9FA] fixed ${hover ? 'translate-y-0' : '-translate-y-full'} duration-75 flex justify-between`}>
                     <div className="m-5 h-[15vh]">
                         <div className="text-xl">Parava</div>
