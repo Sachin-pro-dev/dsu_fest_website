@@ -1,6 +1,10 @@
 import './index.css'
 import NavBar from './components/NavBar';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Home from './pages/home';
+import Events from './pages/events';
+import Artists from './pages/artists';
+import Contacts from './pages/contacts';
 
 function App() {
 	return (
@@ -9,11 +13,13 @@ function App() {
 				<div className="absolute z-50">
 					<NavBar />
 				</div>
-				<div className="h-screen w-full z-0 overflow-y-scroll scrollbar">
-					<div className="h-[300vh]"></div>
+				<div className="h-screen w-full z-0 overflow-y-scroll lg:scrollbar pt-[5vh] text-[#F8F9FA] ">
 					<Routes>
 						<Route index element={<Navigate to="/home" replace />} />
-						{/* <Route path="/requests" element={<Requests />} /> */}
+						<Route path="/home" element={<Home />} />
+						<Route path="/events" element={<Events />} />
+						<Route path="/artists" element={<Artists />} />
+						<Route path="/contact" element={<Contacts />} />
 					</Routes>
 				</div>
 			</BrowserRouter>
