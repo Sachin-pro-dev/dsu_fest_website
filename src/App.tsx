@@ -13,7 +13,7 @@ function App() {
 				<div className="absolute z-50">
 					<NavBar />
 				</div>
-				<div className="h-screen w-full z-0 overflow-y-scroll lg:scrollbar pt-[5vh] text-[#F8F9FA] ">
+				<div className="h-screen w-screen z-0 overflow-y-scroll scrollbar pt-[5vh] text-[#F8F9FA] ">
 					<Routes>
 						<Route index element={<Navigate to="/home" replace />} />
 						<Route path="/home" element={<Home />} />
