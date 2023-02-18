@@ -32,7 +32,7 @@ function Home() {
     })
 
     return (
-        <div className="">
+        <div className="overflow-x-hidden">
             <div ref={redHead} className="relative h-[95vh] z-0">
                 <div className={`flex justify-center relative ${isHeadVisible ? 'opacity-100' : 'opacity-25'} duration-700`}>
                     <img src={img0} className="h-[95vh]" alt='background' />
@@ -52,6 +52,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <div className="m-2"></div>
             <div ref={refAbout} className="flex justify-center items-center h-fit py-8 shadow-md">
                 <div className={`${isAboutVisible ? 'translate-x-0 opacity-100 scale-100' : '-translate-x-full opacity-25 scale-0'} duration-500`}>
                     <div className="text-6xl flex justify-center my-5">About</div>

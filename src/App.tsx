@@ -8,7 +8,7 @@ import Contacts from './pages/contacts';
 
 function App() {
 	return (
-		<div className="App bg-[#212529] font-['Poppins']">
+		<div className="App bg-[#212529] font-['Poppins'] ">
 			<BrowserRouter>
 				<div className="absolute z-50">
 					<NavBar />
