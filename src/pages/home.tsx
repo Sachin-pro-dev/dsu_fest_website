@@ -7,11 +7,12 @@ import { useEffect, useRef, useState } from 'react'
 import useOnScreen from '../components/checkOnScreen'
 import EventItem from '../components/event'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import generatePublicUrl from '../components/getImgurl'
 
 function Home() {
 
     const [events, setEvents] = useState<any>(['Event 1', 'Event 2', 'Event 3', 'Event 4', 'Event 5', 'Event 6', 'Event 7', 'Event 8', 'Event 9', 'Event 10'])
-
     const [aboutContentAnimation, setAboutContentAnimation] = useState(false);
 
     var redHead = useRef<any>();
@@ -30,6 +31,10 @@ function Home() {
             setAboutContentAnimation(false)
         }
     })
+
+    useEffect(() => {
+        generatePublicUrl();
+    }, [])
 
     return (
         <div className="overflow-x-hidden">
@@ -56,13 +61,18 @@ function Home() {
             <div ref={refAbout} className="flex justify-center items-center h-fit py-8 shadow-md">
                 <div className={`${isAboutVisible ? 'translate-x-0 opacity-100 scale-100' : '-translate-x-full opacity-25 scale-0'} duration-500`}>
                     <div className="text-6xl flex justify-center my-5">About</div>
-                    <div className={`text-lg text-justify flex justify-center my-5 w-[80vw] ${aboutContentAnimation ? 'opacity-100 scale-100' : 'opacity-25 scale-0'} duration-1000 `}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tincidunt odio. Praesent finibus, massa ullamcorper aliquet tempus, tortor magna facilisis diam, at venenatis lacus metus non metus. Morbi gravida ex nulla, vitae fermentum orci vestibulum in. In euismod aliquam mi id efficitur. Proin ut dolor dictum, egestas nulla nec, molestie ipsum. Suspendisse vel massa varius, tempus velit quis, viverra diam. Phasellus quis placerat nibh. Nunc id convallis purus. Nam in elit sollicitudin, lacinia tellus quis, pharetra metus. Integer in eros erat. Proin pharetra rutrum quam, id efficitur orci consequat a. Duis id dapibus diam. Suspendisse eleifend est metus, vestibulum tincidunt purus condimentum in. Donec sit amet urna varius neque porta viverra. Maecenas nisi orci, mattis vitae eros sit amet, tempor imperdiet diam.</div>
+                    <div className={`text-lg text-justify flex justify-center my-5 w-[60vw] ${aboutContentAnimation ? 'opacity-100 scale-100' : 'opacity-25 scale-0'} duration-1000 `}>
+                        We often talk about how a scenario could turn out in different ways. The "what if?" question is often looming on our heads. So, we present to you, Parva - an endless possibility.
+                        <br /><br />
+                        Parva is an inter-university annual cultural event organised by Dayananda Sagar University for Dayananda Sagar Group of Institutions and various universities across Bangalore where people can zealously participate in a vivid number of events organised for them.
+                        With its limitless potential, Parva promises to provide an unforgettable experience filled with endless possibilities.
+                    </div>
                 </div>
             </div>
             <div ref={refevent} className="">
                 <div className={`m-5 ${isEventVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'} duration-500`}>
                     <div className="text-6xl flex justify-center my-5"> Events </div>
-                    <div className="grid grid-cols-4 w-full h-fit">
+                    <div className="grid grid-cols-6 w-full h-fit">
                         {events.map((item: any) => (
                             <EventItem item={item} />
                         ))}
