@@ -32,9 +32,9 @@ function Home() {
         }
     })
 
-    useEffect(() => {
-        generatePublicUrl();
-    }, [])
+    // useEffect(() => {
+    //     generatePublicUrl();
+    // }, [])
 
     return (
         <div className="overflow-x-hidden">

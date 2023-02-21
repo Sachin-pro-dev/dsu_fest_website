@@ -25,7 +25,7 @@ function NavBar() {
                     <div className={`flex h-full justify-between items-center`}>
                         <div className="mx-5 text-md flex items-center justify-between w-[25vw]">
                             <div className="text-xl">Parva</div>
-                            <div className="">Dayananda Sagar Univesity</div>
+                            <div className="">Dayananda Sagar University</div>
                         </div>
                         <div className="grid grid-cols-5 items-center w-[30vw]">
                             <div className="w-[6vw] flex justify-center">
@@ -71,7 +71,7 @@ function NavBar() {
                 <div className={`bg-[#343A40] h-[15vh] w-screen drop-shadow-md text-[#F8F9FA] fixed ${hover ? 'translate-y-0' : '-translate-y-full'} duration-75 flex justify-between`}>
                     <div className="m-5 h-[15vh]">
                         <div className="text-xl">Parva</div>
-                        <div className="text-2xl">Dayananda Sagar Univesity</div>
+                        <div className="text-2xl">Dayananda Sagar University</div>
                     </div>
                     <div className="grid grid-cols-4 h-[15vh] items-center w-[30vw]">
                         <Link to={'/home'} >
