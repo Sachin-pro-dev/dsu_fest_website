@@ -1,14 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import '../index.css'
-import img0 from '../images/home-0.jpg'
-import logo from '../images/dsu_logo.png'
+import img0 from '../img/home-0.jpg'
+import logo from '../img/dsu_logo.png'
 import { useEffect, useRef, useState } from 'react'
 import useOnScreen from '../components/checkOnScreen'
 import EventItem from '../components/event'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import generatePublicUrl from '../components/getImgurl'
+import SlideShow from '../components/slideshow'
 
 function Home() {
 
@@ -68,6 +69,9 @@ function Home() {
                         With its limitless potential, Parva promises to provide an unforgettable experience filled with endless possibilities.
                     </div>
                 </div>
+            </div>
+            <div className="">
+                <SlideShow />
             </div>
             <div ref={refevent} className="">
                 <div className={`m-5 ${isEventVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'} duration-500`}>
