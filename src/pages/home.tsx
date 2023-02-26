@@ -7,8 +7,6 @@ import { useEffect, useRef, useState } from 'react'
 import useOnScreen from '../components/checkOnScreen'
 import EventItem from '../components/event'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
-import generatePublicUrl from '../components/getImgurl'
 import SlideShow from '../components/slideshow'
 
 function Home() {
@@ -32,11 +30,7 @@ function Home() {
             setAboutContentAnimation(false)
         }
     })
-
-    // useEffect(() => {
-    //     generatePublicUrl();
-    // }, [])
-
+    
     return (
         <div className="overflow-x-hidden">
             <div ref={redHead} className="relative h-[95vh] z-0">
@@ -70,10 +64,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="">
-                <SlideShow />
-            </div>
-            <div ref={refevent} className="">
+            <div ref={refevent} className="shadow-md">
                 <div className={`m-5 ${isEventVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'} duration-500`}>
                     <div className="text-6xl flex justify-center my-5"> Events </div>
                     <div className="grid grid-cols-6 w-full h-fit">
@@ -82,6 +73,9 @@ function Home() {
                         ))}
                     </div>
                 </div>
+            </div>
+            <div className="">
+                <SlideShow />
             </div>
             <div className="h-[50vh] flex justify-center items-center">
                 Sponsers
