@@ -29,7 +29,7 @@ function NavBar() {
                         </div>
                         <div className="grid grid-cols-5 items-center w-[30vw]">
                             <div className="w-[6vw] flex justify-center">
-                                <Link to={'/dsu_fest_website/home'} >
+                                <Link to={'/home'} >
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 justify-self-center cursor-pointer hover:w-6 hover:h-6 transition-all">
                                         <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
                                         <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
@@ -37,7 +37,7 @@ function NavBar() {
                                 </Link>
                             </div>
                             <div className="w-[6vw] flex justify-center">
-                                <Link to={'/dsu_fest_website/events'} >
+                                <Link to={'/events'} >
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 justify-self-center cursor-pointer hover:w-6 hover:h-6 transition-all">
                                         <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
                                         <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
@@ -45,14 +45,14 @@ function NavBar() {
                                 </Link>
                             </div>
                             <div className="w-[6vw] flex justify-center">
-                                <Link to={'/dsu_fest_website/artists'} >
+                                <Link to={'/artists'} >
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 justify-self-center cursor-pointer hover:w-6 hover:h-6 transition-all">
                                         <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
                                     </svg>
                                 </Link>
                             </div>
                             <div className="w-[6vw] flex justify-center">
-                                <Link to={'/dsu_fest_website/contact'} >
+                                <Link to={'/contact'} >
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 justify-self-center cursor-pointer hover:w-6 hover:h-6 transition-all">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
                                     </svg>
@@ -74,7 +74,7 @@ function NavBar() {
                         <div className="text-2xl">Dayananda Sagar University</div>
                     </div>
                     <div className="grid grid-cols-4 h-[15vh] items-center w-[30vw]">
-                        <Link to={'/dsu_fest_website/home'} >
+                        <Link to={'/home'} >
                             <div onClick={() => setHover(false)} className="grid grid-rows-2 justify-center items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 justify-self-center cursor-pointer hover:w-9 hover:h-9 transition-all">
                                     <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
@@ -83,7 +83,7 @@ function NavBar() {
                                 <div className="text-xs justify-self-center cursor-pointer">Home</div>
                             </div>
                         </Link>
-                        <Link to={'/dsu_fest_website/events'} >
+                        <Link to={'/events'} >
                             <div onClick={() => setHover(false)} className="grid grid-rows-2 justify-center items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 justify-self-center cursor-pointer hover:w-9 hover:h-9 transition-all">
                                     <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
@@ -92,7 +92,7 @@ function NavBar() {
                                 <div className="text-xs justify-self-center cursor-pointer">Events</div>
                             </div>
                         </Link>
-                        <Link to={'/dsu_fest_website/artists'} >
+                        <Link to={'/artists'} >
                             <div onClick={() => setHover(false)} className="grid grid-rows-2 justify-center items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 justify-self-center cursor-pointer hover:w-9 hover:h-9 transition-all">
                                     <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
@@ -100,7 +100,7 @@ function NavBar() {
                                 <div className="text-xs justify-self-center cursor-pointer">Artist</div>
                             </div>
                         </Link>
-                        <Link to={'/dsu_fest_website/contact'} >
+                        <Link to={'/contact'} >
                             <div onClick={() => setHover(false)} className="grid grid-rows-2 justify-center items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-8 h-8 justify-self-center cursor-pointer hover:w-9 hover:h-9 transition-all">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
