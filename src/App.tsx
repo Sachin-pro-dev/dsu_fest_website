@@ -16,6 +16,7 @@ function App() {
 				<div className="h-screen w-screen z-0 overflow-y-scroll scrollbar pt-[5vh] text-[#F8F9FA] ">
 					<Routes>
 						<Route index element={<Navigate to="/home" replace />} />
+						<Route path='/dsu_fest_website' element={<Navigate to="/home" replace />} />
 						<Route path="/home" element={<Home />} />
 						<Route path="/events" element={<Events />} />
 						<Route path="/artists" element={<Artists />} />
