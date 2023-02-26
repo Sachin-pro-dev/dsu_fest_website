@@ -15,11 +15,11 @@ function App() {
 				</div>
 				<div className="h-screen w-screen z-0 overflow-y-scroll scrollbar pt-[5vh] text-[#F8F9FA] ">
 					<Routes>
-						<Route index element={<Navigate to="/home" replace />} />
-						<Route path="/home" element={<Home />} />
-						<Route path="/events" element={<Events />} />
-						<Route path="/artists" element={<Artists />} />
-						<Route path="/contact" element={<Contacts />} />
+						<Route index element={<Navigate to="/dsu_fest_website/home" replace />} />
+						<Route path="/dsu_fest_website/home" element={<Home />} />
+						<Route path="/dsu_fest_website/events" element={<Events />} />
+						<Route path="/dsu_fest_website/artists" element={<Artists />} />
+						<Route path="/dsu_fest_website/contact" element={<Contacts />} />
 					</Routes>
 				</div>
 			</HashRouter >
