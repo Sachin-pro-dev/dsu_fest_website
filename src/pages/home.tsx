@@ -14,8 +14,8 @@ function Home() {
     const [events, setEvents] = useState<any>(['Event 1', 'Event 2', 'Event 3', 'Event 4', 'Event 5', 'Event 6', 'Event 7', 'Event 8', 'Event 9', 'Event 10'])
     const [aboutContentAnimation, setAboutContentAnimation] = useState(false);
 
-    var redHead = useRef<any>();
-    const isHeadVisible = useOnScreen(redHead)
+    var refHead = useRef<any>();
+    const isHeadVisible = useOnScreen(refHead)
     var refAbout = useRef<any>();
     const isAboutVisible = useOnScreen(refAbout)
     var refevent = useRef<any>()
@@ -33,7 +33,7 @@ function Home() {
     
     return (
         <div className="overflow-x-hidden">
-            <div ref={redHead} className="relative h-[95vh] z-0">
+            <div ref={refHead} className="relative h-[95vh] z-0">
                 <div className={`flex justify-center relative ${isHeadVisible ? 'opacity-100' : 'opacity-25'} duration-700`}>
                     <img src={img0} className="h-[95vh]" alt='background' />
                     <div className="absolute bg-[#000000] h-[95vh] w-screen opacity-50"></div>
