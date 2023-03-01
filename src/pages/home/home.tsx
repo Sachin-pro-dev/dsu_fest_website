@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-import '../index.css'
-import img0 from '../img/home-0.jpg'
-import logo from '../img/dsu_logo.png'
+import '../../index.css'
+import img0 from '../../img/home-0.jpg'
+import logo from '../../img/dsu_logo.png'
 import { useEffect, useRef, useState } from 'react'
-import useOnScreen from '../components/checkOnScreen'
-import EventItem from '../components/event'
+import useOnScreen from '../../components/checkOnScreen'
+import EventItem from '../../components/event'
 import { Link } from 'react-router-dom'
-import SlideShow from '../components/slideshow'
+import SlideShow from '../../components/slideshow'
 
 function Home() {
 
