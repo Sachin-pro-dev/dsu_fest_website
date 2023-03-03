@@ -1,11 +1,7 @@
-import '../../index.css'
+import "../../index.css";
 
 function HomeMobile() {
-    return (
-        <div className="">
-            Home Mobile
-        </div>
-    )
+  return <div className="">Home Mobile</div>;
 }
 
-export default HomeMobile
+export default HomeMobile;
