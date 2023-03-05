@@ -15,11 +15,11 @@ function SlideShow() {
 
     return (
         <div className="">
-            <div className="overflow-x-scroll scrollbar h-[80vh] flex items-center">
+            {/* <div className="overflow-x-scroll scrollbar h-[80vh] flex items-center">
                 {images.map((item: any) => (
                     <ImgItem item={item} />
                 ))}
-            </div>
+            </div> */}
             <div className="slide-container">
                 <Fade>
                     {images.map((fadeImage: any, index: any) => (
