@@ -103,7 +103,6 @@ function Home() {
 				<SlideShow />
 			</div>
 			<div className="h-[50vh] flex justify-center items-center">Sponsers</div>
-			{/* footer */}
 			< Footer />
 		</div>
 	);

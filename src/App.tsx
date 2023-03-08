@@ -1,6 +1,6 @@
 import "./index.css";
 import NavBar from "./components/NavBar";
-import { HashRouter, Navigate, Route, Routes, useHref } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/home";
 import Events from "./pages/events/events";
 import Artists from "./pages/artists/artists";
