@@ -1,6 +1,6 @@
 import "./index.css";
 import NavBar from "./components/NavBar";
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes, useHref } from "react-router-dom";
 import Home from "./pages/home/home";
 import Events from "./pages/events/events";
 import Artists from "./pages/artists/artists";
@@ -14,20 +14,34 @@ import ContactsMobile from "./pages/contacts/contacts-mobile";
 import EventsTablet from "./pages/events/events-tablet";
 import ArtistsTablet from "./pages/artists/artists-tablet";
 import ContactsTablet from "./pages/contacts/contacts-tablet";
+import { useEffect, useRef } from "react";
 
 function App() {
 	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 	const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
 
+	const ref = useRef<any>(null);
+
+	const scroll = () => {
+		ref.current.scroll({
+			top: 0,
+			behavior: "smooth"
+		});
+	}
+
+	useEffect(() => {
+
+	}, [])
+
 	return (
 		<div className="App bg-[#212529] font-['Poppins'] ">
 			<HashRouter>
 				<div className="absolute z-50">
-					<NavBar />
+					<NavBar scroll={scroll} />
 				</div>
 				{isDesktopOrLaptop && (
-					<div className="h-screen w-screen z-0 overflow-y-scroll scrollbar pt-[5vh] text-[#F8F9FA] ">
+					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar pt-[5vh] text-[#F8F9FA] ">
 						<Routes>
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<Home />} />
@@ -38,7 +52,7 @@ function App() {
 					</div>
 				)}
 				{isTabletOrMobile && !isPortrait && (
-					<div className="h-screen w-screen z-0 overflow-y-scroll scrollbar-hidden pt-[10vh] text-[#F8F9FA] ">
+					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar-hidden pt-[10vh] text-[#F8F9FA] ">
 						<Routes>
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<Home />} />
@@ -50,7 +64,7 @@ function App() {
 					</div>
 				)}
 				{isTabletOrMobile && isPortrait && (
-					<div className="h-screen w-screen z-0 overflow-y-scroll scrollbar-hidden pt-[4vh] text-[#F8F9FA] ">
+					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar-hidden pt-[4vh] text-[#F8F9FA] ">
 						<Routes>
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<Home />} />
