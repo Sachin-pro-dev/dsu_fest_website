@@ -15,6 +15,8 @@ import EventsTablet from "./pages/events/events-tablet";
 import ArtistsTablet from "./pages/artists/artists-tablet";
 import ContactsTablet from "./pages/contacts/contacts-tablet";
 import { useEffect, useRef } from "react";
+import HomeTablet from "./pages/home/home-tablet";
+import HomeMobile from "./pages/home/home-mobile";
 
 function App() {
 	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
@@ -55,8 +57,7 @@ function App() {
 					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar-hidden pt-[10vh] text-[#F8F9FA] ">
 						<Routes>
 							<Route index element={<Navigate to="/home" replace />} />
-							<Route path="/home" element={<Home />} />
-							{/* <Route path="/home" element={<HomeTablet />} /> */}
+							<Route path="/home" element={<HomeTablet />} />
 							<Route path="/events" element={<EventsTablet />} />
 							<Route path="/artists" element={<ArtistsTablet />} />
 							<Route path="/contact" element={<ContactsTablet />} />
@@ -67,8 +68,7 @@ function App() {
 					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar-hidden pt-[4vh] text-[#F8F9FA] ">
 						<Routes>
 							<Route index element={<Navigate to="/home" replace />} />
-							<Route path="/home" element={<Home />} />
-							{/* <Route path="/home" element={<HomeMobile />} /> */}
+							<Route path="/home" element={<HomeMobile />} />
 							<Route path="/events" element={<EventsMobile />} />
 							<Route path="/artists" element={<ArtistsMobile />} />
 							<Route path="/contact" element={<ContactsMobile />} />

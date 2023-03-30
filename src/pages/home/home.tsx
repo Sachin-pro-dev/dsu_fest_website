@@ -45,8 +45,8 @@ function Home() {
 	return (
 		<div className="overflow-x-hidden">
 			<div ref={refHead} className="relative h-[95vh] z-0">
-				<div className={`flex justify-center relative ${isHeadVisible ? "opacity-100" : "opacity-25"} duration-700`}>
-					<img src={img0} className="h-[95vh]" alt="background" />
+				<div className={`flex justify-center items-center h-[95vh] relative ${isHeadVisible ? "opacity-100" : "opacity-25"} duration-700`}>
+					<img src={img0} className="h-[700px] w-[3000px]" alt="background" />
 					<div className="absolute bg-[#000000] h-[95vh] w-screen opacity-50"></div>
 				</div>
 				<div className="absolute inset-0 z-10">
