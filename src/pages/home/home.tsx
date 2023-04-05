@@ -58,7 +58,7 @@ function Home() {
 
 						<div className="flex justify-center items-center">
 							<div className="">
-								<div className="text-8xl m-4">Parva</div>
+								<div className="text-8xl m-4">Cosmo</div>
 								<div className="text-2xl flex justify-center">
 									A Grand Celebration
 								</div>
@@ -74,14 +74,14 @@ function Home() {
 					<div className={`text-lg text-justify flex justify-center my-5 w-[60vw] ${aboutContentAnimation? "opacity-100 scale-100": "opacity-25 scale-0"} duration-1000 `}>
 						We often talk about how a scenario could turn out in different ways.
 						The "what if?" question is often looming on our heads. So, we
-						present to you, Parva - an endless possibility.
+						present to you, Cosmo - an endless possibility.
 						<br />
 						<br />
-						Parva is an inter-university annual cultural event organised by
+						Cosmo is an inter-university annual cultural event organised by
 						Dayananda Sagar University for Dayananda Sagar Group of Institutions
 						and various universities across Bangalore where people can zealously
 						participate in a vivid number of events organised for them. With its
-						limitless potential, Parva promises to provide an unforgettable
+						limitless potential, Cosmo promises to provide an unforgettable
 						experience filled with endless possibilities.
 					</div>
 				</div>
