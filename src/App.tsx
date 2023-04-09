@@ -43,7 +43,7 @@ function App() {
 					<NavBar scroll={scroll} />
 				</div>
 				{isDesktopOrLaptop && (
-					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar pt-[5vh] text-[#F8F9FA] ">
+					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar pt-[10vh] text-[#F8F9FA] ">
 						<Routes>
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<Home />} />
