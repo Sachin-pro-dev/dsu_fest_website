@@ -14,7 +14,7 @@ import ContactsMobile from "./pages/contacts/contacts-mobile";
 import EventsTablet from "./pages/events/events-tablet";
 import ArtistsTablet from "./pages/artists/artists-tablet";
 import ContactsTablet from "./pages/contacts/contacts-tablet";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import HomeTablet from "./pages/home/home-tablet";
 import HomeMobile from "./pages/home/home-mobile";
 
@@ -31,10 +31,6 @@ function App() {
 			behavior: "smooth"
 		});
 	}
-
-	useEffect(() => {
-
-	}, [])
 
 	return (
 		<div className="App bg-[#212529] font-['Poppins'] ">
@@ -54,7 +50,7 @@ function App() {
 					</div>
 				)}
 				{isTabletOrMobile && !isPortrait && (
-					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar-hidden pt-[10vh] text-[#F8F9FA] ">
+					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll overflow-x-hidden scrollbar-hidden pt-[10vh] text-[#F8F9FA] ">
 						<Routes>
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<HomeTablet />} />
@@ -65,7 +61,7 @@ function App() {
 					</div>
 				)}
 				{isTabletOrMobile && isPortrait && (
-					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll scrollbar-hidden pt-[4vh] text-[#F8F9FA] ">
+					<div ref={ref} className="h-screen w-screen z-0 overflow-y-scroll overflow-x-hidden scrollbar-hidden pt-[4vh] text-[#F8F9FA] ">
 						<Routes>
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<HomeMobile />} />

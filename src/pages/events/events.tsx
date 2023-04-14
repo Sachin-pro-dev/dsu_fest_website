@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import EventItemEvents from '../../components/eventItemEvents'
 import Footer from '../../components/footer'
 
@@ -36,59 +37,97 @@ import codeAuction from '../../events-img/code-auction.jpg'
 
 function Events() {
 
+    const [isLoading, setIsLoading] = useState(false)
+
     const [soloEvents, setSoloEvents] = useState([
-        { title: 'Stand Up Comedy', img: standUpComedy, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Beat Boxing', img: beatBoxing, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Dance', img: danceSolo, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Singing', img: singing, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Content Writing', img: contentWriting, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Poetry', img: poetry, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Essay Writing', img: essayWriting, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Painting', img: painting, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' }
+        { title: 'Stand Up Comedy', img: standUpComedy },
+        { title: 'Beat Boxing', img: beatBoxing },
+        { title: 'Dance', img: danceSolo },
+        { title: 'Singing', img: singing },
+        { title: 'Content Writing', img: contentWriting },
+        { title: 'Poetry', img: poetry },
+        { title: 'Essay Writing', img: essayWriting },
+        { title: 'Painting', img: painting }
     ])
 
     const [groupEvents, setGroupEvents] = useState([
-        { title: 'FIFA', img: fifa, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Valorant', img: valorant, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'CODM', img: codm, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Group Dance', img: groupDance, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Battle Of Bands', img: battleOfBands, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Treasure Hunt', img: treasureHunt, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Documentary', img: documentary, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Theatre', img: theatre, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Reels', img: reels, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Fashion Show', img: fashionShow, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Face Painting', img: facePainting, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Product Launch', img: productLaunch, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Rangoli', img: rangoli, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Debate', img: debate, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Mr & Miss DSU', img: mrMissDsu, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'E Poster', img: ePoster, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Hackathon', img: hackathon, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' },
-        { title: 'Code Auction', img: codeAuction, hash: 'LXF}.?xtNZs.00IUWVof~q%2jZRj' }
+        { title: 'FIFA', img: fifa },
+        { title: 'Valorant', img: valorant },
+        { title: 'CODM', img: codm },
+        { title: 'Group Dance', img: groupDance },
+        { title: 'Battle Of Bands', img: battleOfBands },
+        { title: 'Treasure Hunt', img: treasureHunt },
+        { title: 'Documentary', img: documentary },
+        { title: 'Theatre', img: theatre },
+        { title: 'Reels', img: reels },
+        { title: 'Fashion Show', img: fashionShow },
+        { title: 'Face Painting', img: facePainting },
+        { title: 'Product Launch', img: productLaunch },
+        { title: 'Rangoli', img: rangoli },
+        { title: 'Debate', img: debate },
+        { title: 'Mr & Miss DSU', img: mrMissDsu },
+        { title: 'E Poster', img: ePoster },
+        { title: 'Hackathon', img: hackathon },
+        { title: 'Code Auction', img: codeAuction }
     ])
+
+    const loadImage = (image: any) => {
+        return new Promise((resolve, reject) => {
+            const loadImg = new Image()
+            loadImg.src = image
+            loadImg.onload = () => resolve(image)
+            loadImg.onerror = err => reject(err)
+        })
+    }
+
+    useEffect(() => {
+        Promise.all([...soloEvents, ...groupEvents].map(item => loadImage(item.img)))
+            .then(() => setIsLoading(true))
+            .catch(err => console.log("Failed to load images", err))
+    }, [])
 
     return (
         <div className="">
-            <div className="p-5">
-                <div className="text-5xl flex justify-center items-center w-full p-5">
-                    SOLO EVENTS
+            {!isLoading &&
+                <div className="">Loading ...</div>
+            }
+            {isLoading &&
+                <div className="">
+                    <div className="p-5">
+                        <div className="text-5xl flex justify-center items-center w-full p-5 my-5">
+                            SOLO EVENTS
+                        </div>
+                        <div className="grid grid-cols-4 gap-x-5 gap-y-10">
+                            {soloEvents.map((item: any) => (
+                                <div className="flex justify-center items-center">
+                                    <div className="p-3 h-[300px] w-[325px] bg-[#495057] rounded-lg transition-all hover:scale-110 cursor-pointer">
+                                        <div className="h-[225px] rounded-lg transition-all">
+                                            <img src={item.img} className={`h-[225px] object-cover`} loading='lazy' alt="event" />
+                                        </div>
+                                        <div className="text-base flex justify-center my-5">{item.title}</div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="text-5xl flex justify-center items-center w-full p-5 my-5">
+                            GROUP EVENTS
+                        </div>
+                        <div className="grid grid-cols-4 gap-x-5 gap-y-10">
+                            {groupEvents.map((item: any) => (
+                                <div className="flex justify-center items-center">
+                                    <div className="p-3 h-[300px] w-[325px] bg-[#495057] rounded-lg transition-all hover:scale-110 cursor-pointer">
+                                        <div className="h-[225px] rounded-lg transition-all">
+                                            <img src={item.img} className={`h-[225px] object-cover`} loading='lazy' alt="event" />
+                                        </div>
+                                        <div className="text-base flex justify-center my-5">{item.title}</div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    < Footer />
                 </div>
-                <div className="grid grid-cols-4 gap-5">
-                    {soloEvents.map((item: any) => (
-                        <EventItemEvents item={item} />
-                    ))}
-                </div>
-                <div className="text-5xl flex justify-center items-center w-full p-5">
-                    GROUP EVENTS
-                </div>
-                <div className="grid grid-cols-4 gap-5">
-                    {groupEvents.map((item: any) => (
-                        <EventItemEvents item={item} />
-                    ))}
-                </div>
-            </div>
-            < Footer />
+            }
         </div>
     )
 }
