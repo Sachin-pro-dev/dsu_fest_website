@@ -80,6 +80,14 @@ function Events() {
                 </div>
                 < Footer />
             </div>
+            {/* <div className="fixed top-0 left-0 right-0 z-20">
+                <div className="h-screen w-screen bg-[#000000] opacity-75" />
+            </div>
+            <div className="fixed top-0 left-0 right-0 z-30">
+                <div className="h-screen w-screen flex justify-center items-center">
+                    <div className="w-[80vw] h-[80vh] rounded-lg bg-[#FAFAFA]"></div>
+                </div>
+            </div> */}
         </div>
     )
 }

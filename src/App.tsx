@@ -35,7 +35,7 @@ function App() {
 	return (
 		<div className="App bg-[#212529] font-['Poppins'] ">
 			<HashRouter>
-				<div className="absolute z-50">
+				<div className="absolute z-10">
 					<NavBar scroll={scroll} />
 				</div>
 				{isDesktopOrLaptop && (

@@ -49,28 +49,32 @@ function EventsMobile() {
                     <div className="text-3xl flex justify-center items-center w-full p-5">
                         SOLO EVENTS
                     </div>
-                    <div className="">
-                        {soloEvents.map((item: any) => (
-                            <div className="p-3 my-5 h-[300px] w-[325px] bg-[#495057] rounded-lg transition-all hover:scale-90 cursor-pointer">
-                                <div className="h-[225px] rounded-lg transition-all">
-                                    <img src={item.img} className={`h-[225px] object-cover`} loading='lazy' alt="event" />
+                    <div className="flex justify-center items-center">
+                        <div className="">
+                            {soloEvents.map((item: any) => (
+                                <div className="p-3 my-5 h-[300px] w-[325px] bg-[#495057] rounded-lg transition-all hover:scale-90 cursor-pointer">
+                                    <div className="h-[225px] rounded-lg transition-all">
+                                        <img src={item.img} className={`h-[225px] object-cover`} loading='lazy' alt="event" />
+                                    </div>
+                                    <div className="text-base flex justify-center my-5">{item.title}</div>
                                 </div>
-                                <div className="text-base flex justify-center my-5">{item.title}</div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                     <div className="text-3xl flex justify-center items-center w-full p-5">
                         GROUP EVENTS
                     </div>
-                    <div className="">
-                        {groupEvents.map((item: any) => (
-                            <div className="p-3 my-5 h-[300px] w-[325px] bg-[#495057] rounded-lg transition-all hover:scale-90 cursor-pointer">
-                                <div className="h-[225px] rounded-lg transition-all">
-                                    <img src={item.img} className={`h-[225px] object-cover`} loading='lazy' alt="event" />
+                    <div className="flex justify-center items-center">
+                        <div className="">
+                            {groupEvents.map((item: any) => (
+                                <div className="p-3 my-5 h-[300px] w-[325px] bg-[#495057] rounded-lg transition-all hover:scale-90 cursor-pointer">
+                                    <div className="h-[225px] rounded-lg transition-all">
+                                        <img src={item.img} className={`h-[225px] object-cover`} loading='lazy' alt="event" />
+                                    </div>
+                                    <div className="text-base flex justify-center my-5">{item.title}</div>
                                 </div>
-                                <div className="text-base flex justify-center my-5">{item.title}</div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
                 < Footer />

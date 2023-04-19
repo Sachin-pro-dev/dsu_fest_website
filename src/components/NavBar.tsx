@@ -55,7 +55,7 @@ function NavBar(props: {scroll: any}) {
                         <div className={`bg-[#343A40] h-[10vh] w-screen drop-shadow-md fixed ${!hover ? 'translate-y-0' : '-translate-y-full'} duration-75`}>
                             <div className={`flex h-full justify-between items-center`}>
                                 <div className="mx-5 text-md flex items-center justify-between w-[25vw]">
-                                    <div className="text-xl">Cosmo</div>
+                                    <div className="text-xl">Tantra</div>
                                     <div className="">Dayananda Sagar University</div>
                                 </div>
                                 <div className="grid grid-cols-5 items-center w-[30vw]">
@@ -101,7 +101,7 @@ function NavBar(props: {scroll: any}) {
                     <div className="">
                         <div className={`bg-[#343A40] h-[15vh] w-screen drop-shadow-md text-[#F8F9FA] fixed ${hover ? 'translate-y-0' : '-translate-y-full'} duration-75 flex justify-between`}>
                             <div className="m-5 h-[15vh]">
-                                <div className="text-xl">Cosmo</div>
+                                <div className="text-xl">Tantra</div>
                                 <div className="text-2xl">Dayananda Sagar University</div>
                             </div>
                             <div className="grid grid-cols-4 h-[15vh] items-center w-[30vw]">
@@ -150,7 +150,7 @@ function NavBar(props: {scroll: any}) {
                         <div className={`bg-[#343A40] h-[10vh] w-screen drop-shadow-md fixed ${!hover ? 'translate-y-0' : '-translate-y-full'} duration-75`}>
                             <div className={`flex h-full justify-between items-center`}>
                                 <div className="mx-5 text-md flex items-center justify-between w-[35vw]">
-                                    <div className="text-lg">Cosmo</div>
+                                    <div className="text-lg">Tantra</div>
                                     {/* <div className="text-sm">Dayananda Sagar University</div> */}
                                 </div>
                                 <div className="grid grid-cols-5 items-center w-[30vw]">
@@ -196,7 +196,7 @@ function NavBar(props: {scroll: any}) {
                     <div className="">
                         <div className={`bg-[#343A40] h-fit w-screen drop-shadow-md text-[#F8F9FA] fixed ${hover ? 'translate-y-0' : '-translate-y-full'} duration-75 flex justify-between`}>
                             <div className="m-5">
-                                <div className="text-xl">Cosmo</div>
+                                <div className="text-xl">Tantra</div>
                             </div>
                             <div className="flex justify-between items-center w-[50vw] px-2">
                                 <Link to={'/home'} onClick={props.scroll} >
@@ -243,7 +243,7 @@ function NavBar(props: {scroll: any}) {
                     <div className="">
                         <div className={`bg-[#343A40] h-[4vh] w-screen drop-shadow-md fixed ${!hover ? 'translate-y-0' : '-translate-y-full'} duration-75`} onClick={() => setHover(true)}>
                             <div className={`flex h-full justify-between items-center px-3`}>
-                                <div className="text-lg">Cosmo</div>
+                                <div className="text-lg">Tantra</div>
                                 <div className="w-[6vw] flex justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 justify-self-center cursor-pointer">
                                         <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
