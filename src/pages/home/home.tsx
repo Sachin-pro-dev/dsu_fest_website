@@ -49,7 +49,7 @@ function Home() {
 			<div ref={refHead} className="relative h-full z-0">
 				<div className={`flex justify-center items-center h-full relative ${isHeadVisible ? "opacity-100" : "opacity-25"} duration-700`}>
 					{/* <img src={img0} className="h-[700px] w-[3000px]" alt="background" /> */}
-					<video src={VideoBg} autoPlay loop muted className="w-full" />
+					<video src={VideoBg} autoPlay loop muted className="w-full my-[-200px]" />
 					{/* <div className="absolute bg-[#000000] h-[95vh] w-screen opacity-50"></div> */}
 				</div>
 				<div className="absolute inset-0 z-10">
@@ -68,17 +68,17 @@ function Home() {
 							</div>
 						</div>
 					</div> */}
-					<div className="flex justify-between">
+					{/* <div className="flex justify-between">
 						<div className="my-[-10px]">
 							<img src={logo} className="w-[300px]" alt="logo" />
 						</div>
 						<div className="my-[-10px]">
 							<img src={FestLogo} className="w-[300px]" alt="logo" />
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
-			<div className="m-2"></div>
+			<div className="m-[250px]"></div>
 			<div ref={refAbout} className="flex justify-center items-center h-fit py-8 shadow-md" >
 				<div className={`${isAboutVisible ? "translate-x-0 opacity-100 scale-100" : "-translate-x-full opacity-25 scale-0"} duration-500`}>
 					<div className="text-6xl flex justify-center my-5">About</div>
