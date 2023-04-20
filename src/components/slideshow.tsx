@@ -1,26 +1,25 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import '../index.css'
-import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import useOnScreen from './checkOnScreen';
-import { useRef } from 'react';
+import { useEffect, useState } from 'react';
 
 function SlideShow() {
 
-    function importAll(r: any) {
-        return r.keys().map(r);
-    }
-
-    const images = importAll(require.context('../db/slideshow', false, /\.(png|jpe?g|svg)$/));
+    const images = [
+        'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/slideshow/1.JPG',
+        'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/slideshow/2.jpg',
+        'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/slideshow/3.jpg',
+        'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/slideshow/4.jpg',
+        'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/slideshow/5.JPG',
+        'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/slideshow/6.JPG'
+    ]
 
     return (
         <div className="">
-            {/* <div className="overflow-x-scroll scrollbar h-[80vh] flex items-center">
-                {images.map((item: any) => (
-                    <ImgItem item={item} />
-                ))}
-            </div> */}
-            <div className="slide-container">
+            <div className="h-[80vh] flex items-center">
+                <ImgItem item={images} />
+            </div>
+            {/* <div className="slide-container">
                 <Fade>
                     {images.map((fadeImage: any, index: any) => (
                         <div key={index} className="flex justify-center">
@@ -28,18 +27,53 @@ function SlideShow() {
                         </div>
                     ))}
                 </Fade>
-            </div>
+            </div> */}
         </div>
     )
 }
 
 function ImgItem(props: { item: any }) {
 
-    var ref = useRef<any>();
-    const isVisible = useOnScreen(ref)
+    const [locLeftImg, setLocLeftImg] = useState(0);
+    const [locMidImg, setLocMidImg] = useState(1);
+    const [locRightImg, setLocRightImg] = useState(2);
+
+    const [imgLeftShift, setImgLeftShift] = useState(false);
+
+    const moveTransitionLeft = () => {
+        
+    }
+
+    useEffect(() => {
+
+    }, [imgLeftShift])
+
+    const mod = (n: any, m: any) => ((n % m) + m) % m;
+
+    const onClickLeftImg = () => {
+        setLocLeftImg(mod(locLeftImg - 1, props.item.length))
+        setLocMidImg(mod(locMidImg - 1, props.item.length))
+        setLocRightImg(mod(locRightImg - 1, props.item.length))
+    }
+
+    const onClickRightImg = () => {
+        setLocLeftImg(mod(locLeftImg + 1, props.item.length))
+        setLocMidImg(mod(locMidImg + 1, props.item.length))
+        setLocRightImg(mod(locRightImg + 1, props.item.length))
+    }
 
     return (
-        <img ref={ref} alt='slideshow' className={`h-[75vh] w-[90vw] m-3 ${isVisible ? 'opacity-100' : 'opacity-0'} duration-700`} src={props.item} />
+        <div className="flex justify-center items-center w-full">
+            <div className="h-[30vh] w-[24vw] rounded-lg cursor-pointer" onClick={onClickLeftImg}>
+                <img alt='slideshow' className={`h-[30vh] w-[24vw] object-cover`} src={props.item[locLeftImg]} />
+            </div>
+            <div className="h-[60vh] w-[50vw] mx-[0.5vw] rounded-lg">
+                <img alt='slideshow' className={`h-[60vh] w-[50vw] object-cover`} src={props.item[locMidImg]} />
+            </div>
+            <div className="h-[30vh] w-[24vw] rounded-lg cursor-pointer" onClick={onClickRightImg}>
+                <img alt='slideshow' className={`h-[30vh] w-[24vw] object-cover`} src={props.item[locRightImg]} />
+            </div>
+        </div>
     )
 }
 

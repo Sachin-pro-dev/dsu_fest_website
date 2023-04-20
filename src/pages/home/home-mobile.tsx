@@ -73,11 +73,8 @@ function HomeMobile() {
 			<div ref={refAbout} className="flex justify-center items-center h-fit py-8 shadow-md" >
 				<div className={`${isAboutVisible ? "translate-x-0 opacity-100 scale-100" : "-translate-x-full opacity-25 scale-0"} duration-500`}>
 					<div className="text-4xl flex justify-center my-5">About</div>
-					<div className={`text-sm text-justify flex justify-center my-5 w-[80vw] ${aboutContentAnimation? "opacity-100 scale-100": "opacity-25 scale-0"} duration-1000 `}>
-						We often talk about how a scenario could turn out in different ways.
-						The "what if?" question is often looming on our heads. So, we
-						present to you, Tantra - an endless possibility.
-						<br />
+					<div className={`text-sm text-justify flex justify-center my-5 w-[80vw] ${aboutContentAnimation ? "opacity-100 scale-100" : "opacity-25 scale-0"} duration-1000 `}>
+						We present to you, Tantra - an endless possibility.
 						<br />
 						Tantra is an inter-university annual cultural event organised by
 						Dayananda Sagar University for Dayananda Sagar Group of Institutions
