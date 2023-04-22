@@ -6,8 +6,6 @@ import Events from "./pages/events/events";
 import Artists from "./pages/artists/artists";
 import Contacts from "./pages/contacts/contacts";
 import { useMediaQuery } from "react-responsive";
-// import HomeTablet from "./pages/home/home-tablet";
-// import HomeMobile from "./pages/home/home-mobile";
 import EventsMobile from "./pages/events/events-mobile";
 import ArtistsMobile from "./pages/artists/artists-mobile";
 import ContactsMobile from "./pages/contacts/contacts-mobile";

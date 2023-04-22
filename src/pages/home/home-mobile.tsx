@@ -7,31 +7,16 @@ import { useEffect, useRef, useState } from "react";
 import useOnScreen from "../../components/checkOnScreen";
 import { Link } from "react-router-dom";
 import SlideShow from "../../components/slideshow";
-import EventItemHome from "../../components/eventItemHome";
 import Footer from "../../components/footer";
 import VideoBg from "../../video/promo.mp4"
 
 function HomeMobile() {
-	const [events, setEvents] = useState<any>([
-		"Event 1",
-		"Event 2",
-		"Event 3",
-		"Event 4",
-		"Event 5",
-		"Event 6",
-		"Event 7",
-		"Event 8",
-		"Event 9",
-		"Event 10",
-	]);
 	const [aboutContentAnimation, setAboutContentAnimation] = useState(false);
 
 	var refHead = useRef<any>();
 	const isHeadVisible = useOnScreen(refHead);
 	var refAbout = useRef<any>();
 	const isAboutVisible = useOnScreen(refAbout);
-	var refevent = useRef<any>();
-	const isEventVisible = useOnScreen(refevent);
 
 	useEffect(() => {
 		if (isAboutVisible) {
@@ -85,20 +70,7 @@ function HomeMobile() {
 					</div>
 				</div>
 			</div>
-			<div ref={refevent} className="shadow-md">
-				<div
-					className={`m-5 ${isEventVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"
-						} duration-500`}
-				>
-					<div className="text-6xl flex justify-center my-5"> Events </div>
-					<div className="grid grid-cols-1 w-full h-fit md:grid-cols-5 gap-7">
-						{events.map((item: any) => (
-							<EventItemHome item={item} />
-						))}
-					</div>
-				</div>
-			</div>
-			<div className="">
+			<div className="my-5 min-h-[30vh] shadow-md">
 				<SlideShow />
 			</div>
 			<div className="h-[50vh] flex justify-center items-center">Sponsers</div>

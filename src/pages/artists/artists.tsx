@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react'
-import EventItemEvents from '../../components/eventItemEvents'
 import Footer from '../../components/footer'
 import '../../index.css'
 
 function Artists() {
     const [artists, setArtists] = useState([
-        {title: 'Sangeetha Sringeri', img: 'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/artists-img/sangeetha_sringeri.jpg'},
+        // {title: 'Sangeetha Sringeri', img: 'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/artists-img/sangeetha_sringeri.jpg'},
         {title: 'Mysore Xpress Band', img: 'https://ik.imagekit.io/pranavSindhanuru/tr:w-600/artists-img/MysoreXpressBand.webp'},
     ])
 

@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from 'react'
-import EventItemEvents from '../../components/eventItemEvents'
 import Footer from '../../components/footer'
 
 import '../../index.css'
