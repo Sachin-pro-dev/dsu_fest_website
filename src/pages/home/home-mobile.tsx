@@ -73,7 +73,12 @@ function HomeMobile() {
 			<div className="my-5 min-h-[30vh] shadow-md">
 				<SlideShow />
 			</div>
-			<div className="h-[50vh] flex justify-center items-center">Sponsers</div>
+			<div className="text-4xl flex justify-center my-5">Sponsors</div>
+			<div className="grid grid-rows-3 justify-center gap-y-5 items-center mb-5">
+				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/CrossMediaLogo.PNG" alt="cross media" className={`h-[150px] object-cover`} loading='lazy' />
+				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/ApesKitchenLogo.png" alt="apes kitchen" className={`h-[150px] object-cover`} loading='lazy' />
+				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/SMLEventsLogo.jpg" alt="sml events" className={`h-[150px] object-cover`} loading='lazy' />
+			</div>
 			< Footer />
 		</div>
 	);
