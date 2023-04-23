@@ -15,19 +15,18 @@ function ContactsTablet() {
     >
       <div
         className="flex flex-col justify-between
-          h-screen m-0
+          h-full m-0
           "
       >
         <div className="  w-screen m-0">
-          <h2 className="text-black text-6xl font-bold font-sans m-10 ml-48">
+          <h2 className="text-black text-4xl font-bold m-10 ml-[20vw]">
             CONTACT US
           </h2>
 
           <div
-            className="contactDiv flex justify-evenly gap-7
-            "
+            className="contactDiv flex justify-evenly gap-7"
           >
-            <div className="contactNum mt-20 -ml-28 ">
+            <div className="contactNum -ml-28 ">
               <div className=" flex items-center m-5 gap-3 text-cyan-50">
                 <div className="bg-cyan-50 p-3 rounded-3xl">
                   <svg
@@ -45,8 +44,8 @@ function ContactsTablet() {
                 </div>
 
                 <ul>
-                  <li className="text-lg">RD Lohith</li>
-                  <li className="text-xl">
+                  <li className="text">RD Lohith</li>
+                  <li className="text-md">
                     <a href="tel:+91 8861422587">+91 8861422587</a>
                   </li>
                 </ul>
@@ -69,8 +68,8 @@ function ContactsTablet() {
                 </div>
 
                 <ul>
-                  <li className="text-lg">Maheep</li>
-                  <li className="text-xl">
+                  <li className="text">Maheep</li>
+                  <li className="text-md">
                     <a href="tel:+91 8884142903">+91 8884142903</a>
                   </li>
                 </ul>
@@ -93,8 +92,8 @@ function ContactsTablet() {
                 </div>
 
                 <ul>
-                  <li className="text-lg">Kunal Jaiswal</li>
-                  <li className="text-xl">
+                  <li className="text">Kunal Jaiswal</li>
+                  <li className="text-md">
                     <a href="tel:+91 9148748266">+91 9148748266</a>
                   </li>
                 </ul>
@@ -117,8 +116,8 @@ function ContactsTablet() {
                 </div>
 
                 <ul>
-                  <li className="text-lg">Sai Karthik</li>
-                  <li className="text-xl">
+                  <li className="text">Sai Karthik</li>
+                  <li className="text-md">
                     <a href="tel:+91 8553912102">+91 8553912102</a>
                   </li>
                 </ul>
@@ -128,7 +127,7 @@ function ContactsTablet() {
             <div className="contactLogo ">
               <img
                 src={Logo}
-                className="rounded-full h-80 w-80  translate-y-10 translate-x-20"
+                className="rounded-full h-40 w-40  translate-y-10 translate-x-20"
                 alt=""
               />
             </div>

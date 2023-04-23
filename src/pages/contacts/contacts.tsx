@@ -1,9 +1,8 @@
 import Footer from "../../components/footer";
 import "../../index.css";
-import logo from "../../img/dsu_logo.png";
 import Logo from "../../img/ENGLISH.png";
 import Bg from "./wave.svg";
-import { transform } from "typescript";
+
 function Contacts() {
   return (
     <div
@@ -20,7 +19,7 @@ function Contacts() {
         "
       >
         <div className="  w-screen m-0">
-          <h2 className="text-black text-6xl font-bold font-sans m-10 ml-48">
+          <h2 className="text-black text-5xl font-bold m-10 ml-[20vw]">
             CONTACT US
           </h2>
 
@@ -28,7 +27,7 @@ function Contacts() {
             className="contactDiv flex justify-evenly gap-7 
           "
           >
-            <div className="contactNum mt-20 -ml-28">
+            <div className="contactNum mt-20 -ml-60">
               <div className=" flex items-center m-5 gap-3 text-cyan-50">
                 <div className="bg-cyan-50 p-3 rounded-3xl">
                   <svg
@@ -126,18 +125,20 @@ function Contacts() {
               </div>
             </div>
 
-            <div className="contactLogo ">
-              <img
-                src={Logo}
-                className="rounded-full h-80 w-80  translate-y-10 translate-x-20"
-                alt=""
-              />
+            <div className="pl-[15vw]">
+              <div className="contactLogo">
+                <img
+                  src={Logo}
+                  className="rounded-full h-80 w-80  translate-y-10 translate-x-20"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="footer">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

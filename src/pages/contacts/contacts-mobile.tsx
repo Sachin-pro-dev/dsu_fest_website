@@ -9,19 +9,19 @@ function ContactsMobile() {
       style={{ backgroundImage: `url(${Bg})`, backgroundRepeat: "no-repeat" }}
     >
       <div>
-        <h2 className="text-black text-5xl font-bold  font-sans m-10 mt-3">
+        <h2 className="text-black text-4xl font-bold m-10 mt-3">
           CONTACT US
         </h2>
 
-        <div className="contactDiv flex gap-7 justify-evenly ">
+        <div className="contactDiv flex gap-7">
           <div className="contactNum ml-3 mt-6">
-            <div className=" flex items-center m- gap-2 text-cyan-50">
-              <div className="bg-cyan-50 p-3 rounded-3xl">
+            <div className=" flex items-center m-1 gap-2 text-cyan-50">
+              <div className="bg-cyan-50 p-2 rounded-3xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-6 h-6 text-black "
+                  className="w-4 h-4 text-black "
                 >
                   <path
                     fill-rule="evenodd"
@@ -32,7 +32,7 @@ function ContactsMobile() {
               </div>
 
               <ul>
-                <li className="text-s">RD Lohith</li>
+                <li className="text-sm">RD Lohith</li>
                 <li className="text-base">
                   <a href="tel:+91 8861422587">+91 8861422587</a>
                 </li>
@@ -40,12 +40,12 @@ function ContactsMobile() {
             </div>
 
             <div className=" flex items-center m-1 gap-2 text-cyan-50">
-              <div className="bg-cyan-50 p-3 rounded-3xl">
+              <div className="bg-cyan-50 p-2 rounded-3xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-6 h-6 text-black "
+                  className="w-4 h-4 text-black "
                 >
                   <path
                     fill-rule="evenodd"
@@ -56,7 +56,7 @@ function ContactsMobile() {
               </div>
 
               <ul>
-                <li className="text-s">Maheep</li>
+                <li className="text-sm">Maheep</li>
                 <li className="text-base">
                   <a href="tel:+91 8884142903">+91 8884142903</a>
                 </li>
@@ -64,12 +64,12 @@ function ContactsMobile() {
             </div>
 
             <div className=" flex items-center m-1 gap-2 text-cyan-50">
-              <div className="bg-cyan-50 p-3 rounded-3xl">
+              <div className="bg-cyan-50 p-2 rounded-3xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-6 h-6 text-black "
+                  className="w-4 h-4 text-black "
                 >
                   <path
                     fill-rule="evenodd"
@@ -80,7 +80,7 @@ function ContactsMobile() {
               </div>
 
               <ul>
-                <li className="text-s">Kunal Jaiswal</li>
+                <li className="text-sm">Kunal Jaiswal</li>
                 <li className="text-base">
                   <a href="tel:+91 9148748266">+91 9148748266</a>
                 </li>
@@ -88,12 +88,12 @@ function ContactsMobile() {
             </div>
 
             <div className=" flex items-center m-1 gap-2 text-cyan-50">
-              <div className="bg-cyan-50 p-3 rounded-3xl">
+              <div className="bg-cyan-50 p-2 rounded-3xl">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-6 h-6 text-black "
+                  className="w-4 h-4 text-black "
                 >
                   <path
                     fill-rule="evenodd"
@@ -104,7 +104,7 @@ function ContactsMobile() {
               </div>
 
               <ul>
-                <li className="text-s">Sai Karthik</li>
+                <li className="text-sm">Sai Karthik</li>
                 <li className="text-base">
                   <a href="tel:+91 8553912102">+91 8553912102</a>
                 </li>
@@ -115,7 +115,7 @@ function ContactsMobile() {
           <div className="contactLogo ">
             <img
               src={Logo}
-              className="rounded-full h-40 w-40  translate-y-4"
+              className="rounded-full h-28 w-28 translate-y-4"
               alt=""
             />
           </div>
