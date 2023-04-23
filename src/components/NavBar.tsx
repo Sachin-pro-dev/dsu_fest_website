@@ -253,7 +253,7 @@ function NavBar(props: { scroll: any }) {
             {isTabletOrMobile && isPortrait &&
                 <div className="" ref={refMob}>
                     <div className="">
-                        <div className={`bg-[#343A40] h-[4vh] w-screen drop-shadow-md fixed ${!hover ? 'translate-y-0' : '-translate-y-full'} duration-75`} onClick={() => setHover(true)}>
+                        <div className={`bg-[#343A40] h-[5vh] w-screen drop-shadow-md fixed ${!hover ? 'translate-y-0' : '-translate-y-full'} duration-75`} onClick={() => setHover(true)}>
                             <div className={`flex h-full justify-between items-center px-3`}>
                                 <div className="text-lg">Tantra</div>
                                 <div className="w-[6vw] flex justify-center">
