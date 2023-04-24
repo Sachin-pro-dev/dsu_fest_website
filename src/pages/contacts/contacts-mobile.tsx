@@ -4,7 +4,7 @@ import Bg from "./wave.svg";
 function ContactsMobile() {
   return (
     <div
-      className="bg-black h-full flex flex-col justify-between"
+      className="bg-black h-[50vh] flex flex-col justify-between"
       style={{ backgroundImage: `url(${Bg})`, backgroundRepeat: "no-repeat" }}
     >
       <div>

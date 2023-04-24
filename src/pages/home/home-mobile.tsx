@@ -70,7 +70,7 @@ function HomeMobile() {
 					</div>
 				</div>
 			</div>
-			<div className="my-5 min-h-[30vh] shadow-md">
+			<div className="my-5 mt-10 min-h-[30vh] shadow-md">
 				<SlideShow />
 			</div>
 			<div className="text-4xl flex justify-center my-5">Sponsors</div>

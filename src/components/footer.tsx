@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import '../index.css'
 import { useMediaQuery } from 'react-responsive';
+import logo from '../img/ENGLISH.png'
 
 function Footer(props: { scroll: any }) {
 
@@ -12,22 +13,8 @@ function Footer(props: { scroll: any }) {
         <div className="">
             {isDesktopOrLaptop &&
                 <div className="h-fit bg-[#000000] pt-[5vh]">
-                    <div className="grid grid-cols-2 divide-x justify-center items-center h-[50vh] p-2">
-                        <div className="grid grid-rows-2 justify-center items-center h-[40vh]">
-                            <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/dsu.jpeg" className={`h-[225px] justify-self-center object-cover rounded`} loading='lazy' alt="dsu" />
-                            <div className="text-sm">
-                                DSU City innovation Campus <br /> Hosur Road, Kudlu Gate, Srinivasa Nagar, HAL Layout, Singasandra <br /> Bengaluru - 560068
-                            </div>
-                        </div>
-                        <div className="grid grid-rows-2 justify-center items-center h-[40vh]">
-                            <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/dsi.jpeg" className={`h-[225px] justify-self-center object-cover rounded`} loading='lazy' alt="dsu" />
-                            <div className="text-sm">
-                                DSCE Campus <br /> Shavige Malleshwara Hills, 1st Stage, Kumaraswamy Layout <br /> Bengaluru - 560078
-                            </div>
-                        </div>
-                    </div>
-                    <div className="px-28"><div className="border border-top"></div></div>
-                    <div className="grid grid-cols-3 justify-center items-center h-[30vh] p-2">
+                    <div className="grid grid-cols-4 justify-center items-center h-[50vh] p-2">
+                        <img src={logo} alt="logo" className='h-80 w-80 bg-[#FFFFFF] rounded-full justify-self-center' />
                         <div className="">
                             <div className="flex justify-center items-center text-xl mb-5">LINKS</div>
                             <div className="grid grid-rows-4">
@@ -141,26 +128,8 @@ function Footer(props: { scroll: any }) {
             }
             {isTabletOrMobile && !isPortrait &&
                 <div className="h-fit bg-[#000000] pt-[5vh] w-full">
-                    <div className="grid grid-cols-2 divide-x justify-center items-center h-[60vh] p-2">
-                        <div className="flex justify-center items-center">
-                            <div className="grid grid-rows-2 justify-center items-center h-[50vh] w-[40vw]">
-                                <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/dsu.jpeg" className={`h-[100px] justify-self-center object-cover rounded`} loading='lazy' alt="dsu" />
-                                <div className="text-xs">
-                                    DSU City innovation Campus <br /> Hosur Road, Kudlu Gate, Srinivasa Nagar, HAL Layout, Singasandra <br /> Bengaluru - 560068
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex justify-center items-center">
-                            <div className="grid grid-rows-2 justify-center items-center h-[50vh] w-[40vw]">
-                                <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/dsi.jpeg" className={`h-[100px] justify-self-center object-cover rounded`} loading='lazy' alt="dsu" />
-                                <div className="text-xs">
-                                    DSCE Campus <br /> Shavige Malleshwara Hills, 1st Stage, Kumaraswamy Layout <br /> Bengaluru - 560078
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="px-28"><div className="border border-top"></div></div>
-                    <div className="grid grid-cols-3 justify-center items-center h-[50vh] p-2">
+                    <div className="grid grid-cols-4 justify-center items-center h-[50vh] p-2">
+                        <img src={logo} alt="logo" className='h-40 w-40 bg-[#FFFFFF] rounded-full justify-self-center' />
                         <div className="">
                             <div className="flex justify-center items-center text-md mb-5">LINKS</div>
                             <div className="grid grid-rows-4 text-sm">
@@ -273,26 +242,10 @@ function Footer(props: { scroll: any }) {
                 </div>
             }{isTabletOrMobile && isPortrait &&
                 <div className="h-fit bg-[#000000] pt-[5vh] w-full">
-                    <div className="grid grid-cols-1 justify-center items-center h-[80vh] p-2">
-                        <div className="flex justify-center items-center">
-                            <div className="grid grid-rows-2 justify-center items-center h-[40vh] w-[80vw]">
-                                <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/dsu.jpeg" className={`h-[150px] justify-self-center object-cover rounded`} loading='lazy' alt="dsu" />
-                                <div className="text-xs justify-self-center">
-                                    DSU City innovation Campus <br /> Hosur Road, Kudlu Gate, Srinivasa Nagar, HAL Layout, Singasandra <br /> Bengaluru - 560068
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex justify-center items-center">
-                            <div className="grid grid-rows-2 justify-center items-center h-[40vh] w-[80vw]">
-                                <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/dsi.jpeg" className={`h-[150px] justify-self-center object-cover rounded`} loading='lazy' alt="dsu" />
-                                <div className="text-xs justify-self-center">
-                                    DSCE Campus <br /> Shavige Malleshwara Hills, 1st Stage, Kumaraswamy Layout <br /> Bengaluru - 560078
-                                </div>
-                            </div>
-                        </div>
+                    <div className="flex justify-center items-center">
+                        <img src={logo} alt="logo" className='h-28 w-28 bg-[#FFFFFF] rounded-full' />
                     </div>
-                    <div className="px-28"><div className="border border-top"></div></div>
-                    <div className="grid grid-cols-4 justify-center items-center h-[50vh] p-2">
+                    <div className="grid grid-cols-4 justify-center items-center h-[40vh] p-2">
                         <div className="">
                             <div className="flex justify-center items-center text-md mb-5">LINKS</div>
                             <div className="grid grid-rows-4 text-sm">
