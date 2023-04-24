@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import SlideShow from "../../components/slideshow";
 import Footer from "../../components/footer";
 import VideoBg from "../../video/promo.mp4"
+import Logo from '../../img/dsu_logo.png'
 
 function HomeMobile() {
 	const [aboutContentAnimation, setAboutContentAnimation] = useState(false);
@@ -30,6 +31,9 @@ function HomeMobile() {
 
 	return (
 		<div className="overflow-x-hidden">
+			<div className="flex items-center">
+				<img src={Logo} alt="dsu-logo" className="h-[10vh] mb-[-5vh]" />
+			</div>
 			<div ref={refHead} className="relative h-[250px] z-0">
 				<div className={`flex justify-center items-center h-[250px] relative ${isHeadVisible ? "opacity-100" : "opacity-25"} duration-700`}>
 					{/* <img src={img0} className={`h-[95vh] object-cover duration-[5000ms] ${isHeadVisible ? "object-right" : "object-left"}`} alt="background" />

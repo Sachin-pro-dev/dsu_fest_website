@@ -4,8 +4,9 @@ import "../../index.css";
 import { useEffect, useRef, useState } from "react";
 import useOnScreen from "../../components/checkOnScreen";
 import SlideShow from "../../components/slideshow";
-import Footer from "../../components/footer";
+// import Footer from "../../components/footer";
 import VideoBg from "../../video/promo.mp4"
+import Logo from '../../img/dsu_logo.png'
 
 function Home() {
 	const [aboutContentAnimation, setAboutContentAnimation] = useState(false);
@@ -30,6 +31,9 @@ function Home() {
 			<div ref={refHead} className="relative h-[90vh] z-0">
 				<div className={`flex justify-center items-center h-[90vh] relative ${isHeadVisible ? "opacity-100" : "opacity-25"} duration-700`}>
 					<video src={VideoBg} autoPlay loop muted className="w-full h-[89vh] object-cover" />
+				</div>
+				<div className="absolute inset-0">
+					<img src={Logo} alt="dsu-logo" className="h-[20vh]" />
 				</div>
 			</div>
 			<div className="m-1"></div>

@@ -50,9 +50,9 @@ function App() {
 						</Routes>
 						<Footer scroll={scroll} />
 						<Link to="https://linktr.ee/lifeatdsu">
-							<div className="fixed shadow-md bottom-0 right-0 z-10 mb-2 mr-2 p-2 flex justify-center items-center cursor-pointer rounded-full bg-[#F8F9FA] text-[#212529] transition-all hover:bg-[#212529] hover:text-[#F8F9FA] duration-300">
+							<div className="fixed shadow-md bottom-0 right-0 z-10 mb-2 mr-2 p-2 flex justify-center items-center cursor-pointer rounded-full bg-[#ef6461] text-[#FFFFFF] transition-all hover:bg-[#FFFFFF] hover:text-[#ef6461] duration-300">
 								<div className="flex justify-center items-center">
-									<div className="p-1 rounded justify-self-center">Registration</div>
+									<div className="p-1 rounded justify-self-center">Register Now</div>
 								</div>
 							</div>
 						</Link>
@@ -69,9 +69,9 @@ function App() {
 						</Routes>
 						<Footer scroll={scroll} />
 						<Link to="https://linktr.ee/lifeatdsu">
-							<div className="fixed shadow-md bottom-0 right-0 z-10 mb-2 mr-2 p-2 flex justify-center items-center cursor-pointer rounded-full bg-[#F8F9Fa]" onClick={() => { }}>
+							<div className="fixed shadow-md bottom-0 right-0 z-10 mb-2 mr-2 p-2 flex justify-center items-center cursor-pointer rounded-full bg-[#ef6461] text-[#ffffff]" onClick={() => { }}>
 								<div className="flex  justify-center items-center">
-									<div className="text-xs p-0.5 rounded justify-self-center cursor-pointer bg-[#F8F9FA] text-[#212529]">Registration</div>
+									<div className="text-xs p-0.5 rounded justify-self-center cursor-pointer">Register Now</div>
 								</div>
 							</div>
 						</Link>
@@ -88,9 +88,9 @@ function App() {
 						</Routes>
 						<Footer scroll={scroll} />
 						<Link to="https://linktr.ee/lifeatdsu">
-							<div className="fixed shadow-md bottom-0 right-0 z-10 mb-2 mr-2 p-2 flex justify-center items-center cursor-pointer rounded-full bg-[#F8F9Fa]" onClick={() => { }}>
+							<div className="fixed shadow-md bottom-0 right-0 z-10 mb-2 mr-2 p-2 flex justify-center items-center cursor-pointer rounded-full bg-[#ef6461] text-[#ffffff]" onClick={() => { }}>
 								<div className="flex  justify-center items-center">
-									<div className="text-xs p-0.5 rounded justify-self-center cursor-pointer bg-[#F8F9FA] text-[#212529]">Registration</div>
+									<div className="text-xs p-0.5 rounded justify-self-center cursor-pointer">Register Now</div>
 								</div>
 							</div>
 						</Link>

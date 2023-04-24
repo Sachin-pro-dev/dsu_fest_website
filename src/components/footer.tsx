@@ -17,10 +17,10 @@ function Footer(props: { scroll: any }) {
                         <img src={logo} alt="logo" className='h-80 w-80 bg-[#FFFFFF] rounded-full justify-self-center' />
                         <div className="">
                             <div className="flex justify-center items-center text-xl mb-5">LINKS</div>
-                            <div className="grid grid-rows-4">
+                            <div className="grid grid-rows-3">
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link onClick={props.scroll} to={'/home'}>HOME</Link></div>
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/events'} onClick={props.scroll}>EVENTS</Link></div>
-                                <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/artists'} onClick={props.scroll}>ARTISTS</Link></div>
+                                {/* <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/artists'} onClick={props.scroll}>ARTISTS</Link></div> */}
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/contact'} onClick={props.scroll}>CONTACTS</Link></div>
                             </div>
                         </div>
@@ -132,10 +132,10 @@ function Footer(props: { scroll: any }) {
                         <img src={logo} alt="logo" className='h-40 w-40 bg-[#FFFFFF] rounded-full justify-self-center' />
                         <div className="">
                             <div className="flex justify-center items-center text-md mb-5">LINKS</div>
-                            <div className="grid grid-rows-4 text-sm">
+                            <div className="grid grid-rows-3 text-sm">
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link onClick={props.scroll} to={'/home'}>HOME</Link></div>
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/events'} onClick={props.scroll}>EVENTS</Link></div>
-                                <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/artists'} onClick={props.scroll}>ARTISTS</Link></div>
+                                {/* <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/artists'} onClick={props.scroll}>ARTISTS</Link></div> */}
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/contact'} onClick={props.scroll}>CONTACTS</Link></div>
                             </div>
                         </div>
@@ -248,10 +248,10 @@ function Footer(props: { scroll: any }) {
                     <div className="grid grid-cols-4 justify-center items-center h-[40vh] p-2">
                         <div className="">
                             <div className="flex justify-center items-center text-md mb-5">LINKS</div>
-                            <div className="grid grid-rows-4 text-sm">
+                            <div className="grid grid-rows-3 text-sm">
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link onClick={props.scroll} to={'/home'}>HOME</Link></div>
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/events'} onClick={props.scroll}>EVENTS</Link></div>
-                                <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/artists'} onClick={props.scroll}>ARTISTS</Link></div>
+                                {/* <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/artists'} onClick={props.scroll}>ARTISTS</Link></div> */}
                                 <div className="justify-self-center cursor-pointer hover:text-[#9F9FE3] transition-all"><Link to={'/contact'} onClick={props.scroll}>CONTACTS</Link></div>
                             </div>
                         </div>
