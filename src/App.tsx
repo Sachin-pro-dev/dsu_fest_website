@@ -4,14 +4,14 @@ import NavBar from "./components/NavBar";
 import { HashRouter, Link, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/home";
 import Events from "./pages/events/events";
-import Artists from "./pages/artists/artists";
+// import Artists from "./pages/artists/artists";
 import Contacts from "./pages/contacts/contacts";
 import { useMediaQuery } from "react-responsive";
 import EventsMobile from "./pages/events/events-mobile";
-import ArtistsMobile from "./pages/artists/artists-mobile";
+// import ArtistsMobile from "./pages/artists/artists-mobile";
 import ContactsMobile from "./pages/contacts/contacts-mobile";
 import EventsTablet from "./pages/events/events-tablet";
-import ArtistsTablet from "./pages/artists/artists-tablet";
+// import ArtistsTablet from "./pages/artists/artists-tablet";
 import ContactsTablet from "./pages/contacts/contacts-tablet";
 import { useRef } from "react";
 import HomeTablet from "./pages/home/home-tablet";
@@ -45,7 +45,7 @@ function App() {
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<Home />} />
 							<Route path="/events" element={<Events />} />
-							<Route path="/artists" element={<Artists />} />
+							{/* <Route path="/artists" element={<Artists />} /> */}
 							<Route path="/contact" element={<Contacts />} />
 						</Routes>
 						<Footer scroll={scroll} />
@@ -64,7 +64,7 @@ function App() {
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<HomeTablet />} />
 							<Route path="/events" element={<EventsTablet />} />
-							<Route path="/artists" element={<ArtistsTablet />} />
+							{/* <Route path="/artists" element={<ArtistsTablet />} /> */}
 							<Route path="/contact" element={<ContactsTablet />} />
 						</Routes>
 						<Footer scroll={scroll} />
@@ -83,7 +83,7 @@ function App() {
 							<Route index element={<Navigate to="/home" replace />} />
 							<Route path="/home" element={<HomeMobile />} />
 							<Route path="/events" element={<EventsMobile />} />
-							<Route path="/artists" element={<ArtistsMobile />} />
+							{/* <Route path="/artists" element={<ArtistsMobile />} /> */}
 							<Route path="/contact" element={<ContactsMobile />} />
 						</Routes>
 						<Footer scroll={scroll} />
