@@ -55,7 +55,7 @@ function Home() {
 			<div className="h-[50vh] flex justify-around items-center">
 				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/CrossMediaLogo.PNG" alt="cross media" className={`h-[225px] object-cover`} loading='lazy' />
 				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/ApesKitchenLogo.png" alt="apes kitchen" className={`h-[225px] object-cover`} loading='lazy' />
-				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/SMLEventsLogo.jpg" alt="sml events" className={`h-[225px] object-cover`} loading='lazy' />
+				{/* <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/SMLEventsLogo.jpg" alt="sml events" className={`h-[225px] object-cover`} loading='lazy' /> */}
 			</div>
 			< Footer />
 		</div>

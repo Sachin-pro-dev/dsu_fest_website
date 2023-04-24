@@ -77,7 +77,7 @@ function HomeTablet() {
 			<div className="h-[60vh] flex justify-around items-center">
 				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/CrossMediaLogo.PNG" alt="cross media" className={`h-[150px] object-cover`} loading='lazy' />
 				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/ApesKitchenLogo.png" alt="apes kitchen" className={`h-[150px] object-cover`} loading='lazy' />
-				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/SMLEventsLogo.jpg" alt="sml events" className={`h-[150px] object-cover`} loading='lazy' />
+				{/* <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/SMLEventsLogo.jpg" alt="sml events" className={`h-[150px] object-cover`} loading='lazy' /> */}
 			</div>
 			< Footer />
 		</div>
