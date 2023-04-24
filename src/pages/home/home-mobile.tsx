@@ -32,7 +32,7 @@ function HomeMobile() {
 	return (
 		<div className="overflow-x-hidden">
 			<div className="flex items-center">
-				<img src={Logo} alt="dsu-logo" className="h-[10vh] mb-[-5vh]" />
+				<img src={Logo} alt="dsu-logo" className="h-[10vh] mb-[-20px]" />
 			</div>
 			<div ref={refHead} className="relative h-[250px] z-0">
 				<div className={`flex justify-center items-center h-[250px] relative ${isHeadVisible ? "opacity-100" : "opacity-25"} duration-700`}>
