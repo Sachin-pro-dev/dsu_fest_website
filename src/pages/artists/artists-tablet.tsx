@@ -26,7 +26,6 @@ function ArtistsTablet() {
                     ))}
                 </div>
             </div>
-            < Footer />
         </div>
     )
 }

@@ -114,7 +114,6 @@ function EventsMobile() {
                         </div>
                     </div>
                 </div>
-                < Footer />
             </div>
             {modalShow &&
                 <div className="">

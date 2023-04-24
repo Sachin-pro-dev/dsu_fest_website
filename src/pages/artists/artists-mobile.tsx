@@ -26,7 +26,6 @@ function ArtistsMobile() {
                     ))}
                 </div>
             </div>
-            < Footer />
         </div>
     )
 }

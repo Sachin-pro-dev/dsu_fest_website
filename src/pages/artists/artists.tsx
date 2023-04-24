@@ -25,7 +25,6 @@ function Artists() {
                     ))}
                 </div>
             </div>
-            < Footer />
         </div>
     )
 }

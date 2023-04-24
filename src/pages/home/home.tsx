@@ -57,7 +57,6 @@ function Home() {
 				<img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/ApesKitchenLogo.png" alt="apes kitchen" className={`h-[225px] object-cover`} loading='lazy' />
 				{/* <img src="https://ik.imagekit.io/pranavSindhanuru/sponsors/SMLEventsLogo.jpg" alt="sml events" className={`h-[225px] object-cover`} loading='lazy' /> */}
 			</div>
-			< Footer />
 		</div>
 	);
 }

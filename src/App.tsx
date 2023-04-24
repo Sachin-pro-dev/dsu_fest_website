@@ -16,6 +16,7 @@ import ContactsTablet from "./pages/contacts/contacts-tablet";
 import { useEffect, useRef, useState } from "react";
 import HomeTablet from "./pages/home/home-tablet";
 import HomeMobile from "./pages/home/home-mobile";
+import Footer from "./components/footer";
 
 function App() {
 	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
@@ -82,6 +83,7 @@ function App() {
 							<Route path="/artists" element={<Artists />} />
 							<Route path="/contact" element={<Contacts />} />
 						</Routes>
+						<Footer scroll={scroll} />
 					</div>
 				)}
 				{isTabletOrMobile && !isPortrait && (
@@ -93,6 +95,7 @@ function App() {
 							<Route path="/artists" element={<ArtistsTablet />} />
 							<Route path="/contact" element={<ContactsTablet />} />
 						</Routes>
+						<Footer scroll={scroll} />
 					</div>
 				)}
 				{isTabletOrMobile && isPortrait && (
@@ -104,6 +107,7 @@ function App() {
 							<Route path="/artists" element={<ArtistsMobile />} />
 							<Route path="/contact" element={<ContactsMobile />} />
 						</Routes>
+						<Footer scroll={scroll} />
 					</div>
 				)}
 			</HashRouter>

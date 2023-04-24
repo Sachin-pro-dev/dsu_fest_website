@@ -1,4 +1,3 @@
-import Footer from "../../components/footer";
 import "../../index.css";
 import Logo from "../../img/ENGLISH.png";
 import Bg from "./wave.svg";
@@ -121,7 +120,6 @@ function ContactsMobile() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

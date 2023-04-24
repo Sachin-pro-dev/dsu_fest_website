@@ -1,5 +1,4 @@
 import "../../index.css";
-import Footer from "../../components/footer";
 import Bg from "./wave.svg";
 import Logo from "../../img/ENGLISH.png";
 
@@ -133,9 +132,6 @@ function ContactsTablet() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="footer">
-        <Footer />
       </div>
     </div>
   );

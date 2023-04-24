@@ -113,7 +113,6 @@ function Events() {
                         ))}
                     </div>
                 </div>
-                < Footer />
             </div>
             {modalShow &&
                 <div className="">

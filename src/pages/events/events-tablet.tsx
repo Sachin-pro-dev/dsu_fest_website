@@ -113,7 +113,6 @@ function EventsTablet() {
                         ))}
                     </div>
                 </div>
-                < Footer />
             </div>
             {modalShow &&
                 <div className="">

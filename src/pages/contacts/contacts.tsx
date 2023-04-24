@@ -1,4 +1,3 @@
-import Footer from "../../components/footer";
 import "../../index.css";
 import Logo from "../../img/ENGLISH.png";
 import Bg from "./wave.svg";
@@ -136,9 +135,6 @@ function Contacts() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="footer">
-        <Footer />
       </div>
     </div>
   );
