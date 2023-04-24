@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import '../index.css'
-import 'react-slideshow-image/dist/styles.css'
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
